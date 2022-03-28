@@ -29,6 +29,8 @@ public class Gun : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             FireBullet();
+            soundManagerScript.PlaySound("shotgun");
+          //  soundManagerScript.PlaySound("bullet");
         }
 
       

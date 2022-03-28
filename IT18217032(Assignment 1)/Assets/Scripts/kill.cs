@@ -10,6 +10,8 @@ public class kill : MonoBehaviour
     private void OnMouseDown()
     {
         ScoreScript.scoreValue += 10;
+
+        soundManagerScript.PlaySound("killSound");
         Destroy(gameObject);
         Instantiate(SmashEffect, transform.position, Quaternion.identity);
     }

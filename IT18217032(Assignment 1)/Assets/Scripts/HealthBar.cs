@@ -16,5 +16,7 @@ public class HealthBar : MonoBehaviour
     {
         localScale.x = PlayerCharacter.healthAmount;
         transform.localScale = localScale;
+        if (PlayerCharacter.healthAmount <= 0)
+            Destroy(gameObject);
     }
 }

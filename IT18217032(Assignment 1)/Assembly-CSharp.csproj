@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\bullet.cs" />
     <Compile Include="Assets\Scripts\kill.cs" />
     <Compile Include="Assets\Scripts\pointAndShoot.cs" />
+    <Compile Include="Assets\Scripts\soundManagerScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
