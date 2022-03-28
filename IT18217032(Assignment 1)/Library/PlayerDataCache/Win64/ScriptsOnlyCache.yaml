@@ -6,8 +6,10 @@ ScriptsOnlyBuild:
     - Gun
     - HealthBar
     - PlayerCharacter
+    - ScoreScript
     - kill
     - pointAndShoot
+    - soundManagerScript
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
@@ -28,6 +30,12 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
     - Class: 1
@@ -52,6 +60,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -59,20 +71,36 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 11358}
+    - Class: 114
       Script: {instanceID: 11534}
+    - Class: 114
+      Script: {instanceID: 11696}
     - Class: 114
       Script: {instanceID: 12028}
     - Class: 114
-      Script: {instanceID: 12606}
+      Script: {instanceID: 12130}
     - Class: 114
-      Script: {instanceID: 14442}
+      Script: {instanceID: 12340}
     - Class: 114
-      Script: {instanceID: 14452}
+      Script: {instanceID: 12534}
     - Class: 114
-      Script: {instanceID: 15642}
+      Script: {instanceID: 12610}
     - Class: 114
-      Script: {instanceID: 18418}
+      Script: {instanceID: 14342}
+    - Class: 114
+      Script: {instanceID: 14400}
+    - Class: 114
+      Script: {instanceID: 14450}
+    - Class: 114
+      Script: {instanceID: 14460}
+    - Class: 114
+      Script: {instanceID: 14966}
+    - Class: 114
+      Script: {instanceID: 15080}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -81,6 +109,12 @@ ScriptsOnlyBuild:
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -259,6 +293,12 @@ ScriptsOnlyBuild:
     className: CinemachinePixelPerfect
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScoreScript
+  - hash:
+      serializedVersion: 2
       Hash: ef5c43f921427d03730f6ea4c848f07d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -287,6 +327,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Mask
+  - hash:
+      serializedVersion: 2
+      Hash: e1e19af6d03ea2a7e271a88128cb197a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: kill
   - hash:
       serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
@@ -481,6 +527,12 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
+      Hash: b8b42ba420b738adfcdbdea870d5e6d5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HealthSpawner
+  - hash:
+      serializedVersion: 2
       Hash: 6939772cb3ce775a8e8d99f332534491
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -503,6 +555,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
     className: BeforeAfterTestCommandState
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: soundManagerScript
   - hash:
       serializedVersion: 2
       Hash: 3f3a7586b109fb17f1c89cc91cac3b79
@@ -557,6 +615,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Outline
+  - hash:
+      serializedVersion: 2
+      Hash: 8704fcfecac03d626e77c97a53eb4b4e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: pointAndShoot
   - hash:
       serializedVersion: 2
       Hash: a63fc1a3b035e5a0b5839cd7f7b3086e
@@ -623,25 +687,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: e1e19af6d03ea2a7e271a88128cb197a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: kill
-  - hash:
-      serializedVersion: 2
-      Hash: b8b42ba420b738adfcdbdea870d5e6d5
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: HealthSpawner
-  - hash:
-      serializedVersion: 2
-      Hash: 8704fcfecac03d626e77c97a53eb4b4e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: pointAndShoot
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/prapt/Pictures/IT18217032(Assignment 1).exe
+  playerPath: D:/ASSINGMENt/IT18217032(Assignment 1).exe
