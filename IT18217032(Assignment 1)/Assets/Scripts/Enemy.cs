@@ -29,8 +29,11 @@ public class Enemy : MonoBehaviour
 
         HealthDecrease();
 
-        if (healthAmount <= 0)
+        if (healthAmount <= 0) {
+ 
             Destroy(gameObject);
+
+        }
     }
     private void FixedUpdate()
     {

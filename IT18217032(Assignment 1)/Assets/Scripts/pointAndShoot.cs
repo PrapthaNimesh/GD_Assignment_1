@@ -9,7 +9,7 @@ public class pointAndShoot : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -17,5 +17,6 @@ public class pointAndShoot : MonoBehaviour
     {
         target = transform.GetComponent<Camera>().ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, transform.position.z));
         crosshairs.transform.position = new Vector2(target.x, target.y);
+        
     }
 }

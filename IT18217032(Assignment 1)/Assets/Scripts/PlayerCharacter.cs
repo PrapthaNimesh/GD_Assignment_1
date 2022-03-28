@@ -64,7 +64,7 @@ public class PlayerCharacter : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.name.Equals("Enemy"))
-            healthAmount -= 0.1f;
+            healthAmount -= 0.3f;
         else if (collision.gameObject.name.Equals("HealthPack"))
             healthAmount = 1f;
     }

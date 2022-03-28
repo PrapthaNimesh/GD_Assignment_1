@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scripts\HealthPack.cs" />
     <Compile Include="Assets\Scripts\HealthSpawner.cs" />
     <Compile Include="Assets\Scripts\PlayerCharacter.cs" />
+    <Compile Include="Assets\Scripts\ScoreScript.cs" />
     <Compile Include="Assets\Scripts\bullet.cs" />
     <Compile Include="Assets\Scripts\kill.cs" />
     <Compile Include="Assets\Scripts\pointAndShoot.cs" />
